@@ -44,6 +44,7 @@ app.get('/login', function(req, res)
 {
 	res.render('login');
 });
+//Chức năng đăng kí.
 app.get('/signup', function(req, res)
 {
 	//show form
@@ -72,7 +73,7 @@ app.post('/signup', urlencodedParser, function(req, res)
 	  });
 	});
 });
-
+//---------------------------------------------------
 app.get('/user', function(req, res)
 {
 	res.render('user');
