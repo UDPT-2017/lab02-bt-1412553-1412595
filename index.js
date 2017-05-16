@@ -10,7 +10,7 @@ app.use('/components',express.static("bower_components"));
 
 app.engine('hbs', exphbs({}));
 app.set('view engine', 'hbs');
-
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var config = {
   user: 'postgres', //env var: PGUSER
   database: 'DangKi', //env var: PGDATABASE
