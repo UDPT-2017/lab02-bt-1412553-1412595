@@ -1,0 +1,207 @@
+
+.album-cover
+{
+	height: 450px;	
+}
+.album-cover1
+{
+	height: 300px;	
+}
+.album-cover1.thumbbail img
+{
+	height: 100%;
+	width: 100%;	
+}
+
+.header
+{
+	background-color: lavender;
+
+}
+body 
+{ 
+	padding-top:30px; 
+}
+.form-control { margin-bottom: 10px; }
+
+
+
+
+
+
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+hr {
+  height: 4px;
+  margin-left: 15px;
+  margin-bottom:-3px;
+}
+.hr-warning{
+  background-image: -webkit-linear-gradient(left, rgba(210,105,30,.8), rgba(210,105,30,.6), rgba(0,0,0,0));
+}
+.hr-success{
+  background-image: -webkit-linear-gradient(left, rgba(15,157,88,.8), rgba(15, 157, 88,.6), rgba(0,0,0,0));
+}
+.hr-primary{
+  background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+}
+.hr-danger{
+  background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+}
+
+.breadcrumb {
+  background: rgba(245, 245, 245, 0); 
+  border: 0px solid rgba(245, 245, 245, 1); 
+  border-radius: 25px; 
+  display: block;
+}
+
+.btn-bread{
+    margin-top:10px;
+    font-size: 12px;
+    
+    border-radius: 3px;
+}
+
+
+
+
+
+
+.mycolor{
+            color : #72c02c;
+        }        
+        .myborder{
+            padding: 20px;;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 3px 0px #72c02c;
+            -moz-box-shadow:    0px 0px 3px 0px #72c02c;
+            box-shadow:         0px 0px 3px 0px #72c02c;
+        }
+        .mybutton{
+            position: relative;
+            left: 50%;
+            top: 193px;
+
+        }
+        .margin-bottom-20 {
+            margin-bottom: 20px;
+
+        }
+        .btn-u:hover {
+            background: #5fb611;
+        }
+        .btn-u:hover, .btn-u:focus, .btn-u:active, .btn-u.active, .open .dropdown-toggle.btn-u {
+            background: #5fb611;
+        }
+        .btn-u:hover {
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-u {
+            background: #72c02c;
+        }
+        .btn-u {
+            white-space: nowrap;
+            border: 0;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 400;
+            padding: 6px 13px;
+            position: relative;
+            background: #72c02c;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .input-group-addon {
+            border-right: 0;
+            /*color: #b3b3b3;*/
+            font-size: 14px;
+            background: #fff;
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            color: #555;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .input-group .form-control {
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .form-control {
+            box-shadow: none;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 34px !important;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid  #72c02c !important;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+
+
+
+
+
+
+
+.white{
+    color:#000;
+    background-color:#fff;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #2b4b90;
+    *background-color: #133783;
+    background-image: -moz-linear-gradient(top, #3b5998, #133783);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+    background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+    background-image: -o-linear-gradient(top, #3b5998, #133783);
+    background-image: linear-gradient(to bottom, #3b5998, #133783);
+    background-repeat: repeat-x;
+    border-color: #133783 #133783 #091b40;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+    .btn-facebook:hover,
+    .btn-facebook:focus,
+    .btn-facebook:active,
+    .btn-facebook.active,
+    .btn-facebook.disabled,
+    .btn-facebook[disabled] {
+        color: #ffffff;
+        background-color: #133783 !important;
+        *background-color: #102e6d !important;
+    }
+
+    .btn-facebook:active,
+    .btn-facebook.active {
+        background-color: #0d2456 \9 !important;
+    }
