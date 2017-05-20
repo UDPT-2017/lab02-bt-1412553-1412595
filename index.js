@@ -25,6 +25,23 @@ var config = {
 //it will keep idle connections open for 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);
+var passport = require('passport')
+  , LocalStrategy = require('passport-local').Strategy;
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.findOne({ username: username }, function(err, user) {
+      if (err) { return done(err); }
+      if (!user) {
+        return done(null, false, { message: 'Incorrect username.' });
+      }
+      if (!user.validPassword(password)) {
+        return done(null, false, { message: 'Incorrect password.' });
+      }
+      return done(null, user);
+    });
+  }
+));
+
 
 app.get('/', function(req, res)
 {
@@ -43,6 +60,11 @@ app.get('/about', function(req, res)
 app.get('/login', function(req, res)
 {
 	res.render('login');
+});
+app.get('/signupcomple', function(req, res)
+{
+	//show form
+	
 });
 //Chức năng đăng kí.
 app.get('/signup', function(req, res)
@@ -69,7 +91,7 @@ app.post('/signup', urlencodedParser, function(req, res)
 	    	res.end();
 	      return console.error('error running query', err);
 	    }
-	    res.redirect('signup');
+	    res.render('signupcomple');
 	  });
 	});
 });
