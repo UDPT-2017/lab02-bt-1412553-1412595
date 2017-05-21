@@ -51,6 +51,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
+* Tạo chức năng đăng nhập: http://imgur.com/a/rKM04
 
 ![Video Walkthrough](demo.gif)
 

@@ -80,6 +80,30 @@ module.exports = function (app)
 		  });
 		});
 	});
+	//--------------------------------------------------------
+	app.post('/login', urlencodedParser, function(req, res)
+	{
+		//insert dba
+		
+		pool.connect(function(err, client, done) {
+		  if(err) {
+		    return console.error('error fetching client from pool', err);
+		  }
+		  	var Email = req.body.txtEmail;
+			var Password = req.body.txtPassword;
+
+		  client.query("SELECT * FROM DangKiTK WHERE email = '"+txtEmail+"'", function(err, result) {
+		    done(err);
+
+		    if(err) {
+		    	res.end();
+		      return console.error('error running query', err);
+		    }
+		    console.log(result.row[0]);
+		    //res.render('signupcomple');
+		  });
+		});
+	});
 	//---------------------------------------------------
 	require('./routes')(app);
 }
