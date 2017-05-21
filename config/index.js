@@ -1,5 +1,6 @@
 var express = require('express');
 var pg = require('pg');
+var connectionString = "postgres://postgres:123@localhost:5432/DangKiTK";
 var passport = require('passport');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
@@ -50,10 +51,10 @@ module.exports = function (app)
 	//=================================================================
 
 	
-	app.get('/signupcomple', function(req, res)
-	{
+	//app.get('/signupcomple', function(req, res)
+	//{
 
-	});
+	//});
 	//=========================================================
 	//Chức năng đăng kí.
 	app.post('/signup', urlencodedParser, function(req, res)
@@ -75,12 +76,11 @@ module.exports = function (app)
 		    	res.end();
 		      return console.error('error running query', err);
 		    }
-		    res.render('signupcomple', {title: 'Đăng kí thành công', layout: 'location'});
+		    res.render('signupcomple');
 		  });
 		});
 	});
 	//---------------------------------------------------
-
 	require('./routes')(app);
 }
 
